@@ -45,10 +45,10 @@
 相反，若T值为负，表明价格可能下降，这种情况对应着持有该股票的股民可以进行卖出；
 T值趋于0则表示价格相对平稳，可以进行买入或卖出。在实验中，我们设计的b值为2.0。
 
-- ![](https://github.com/mingmingxi/423/edit/master/img/1.PNG)
+- ![](https://github.com/mingmingxi/423/blob/master/1.PNG)
 
 导入股票数据之后，我们首先计算数据的T指标，并画出K线图和指标线图，如下图所示：
-- ![](https://github.com/mingmingxi/423/edit/master/img/2.PNG)
+- ![](https://github.com/mingmingxi/423/blob/master/2.jpg)
 
 K线图中柱条：表示当天的最高、最低价格；框：表示开盘价和收盘价，橙色：一天中呈下降趋势，绿色：一天中呈上升趋势。
 本实验中计算的是未来 10 天内的T值，如 Figure1中下方的图线所示
@@ -62,7 +62,7 @@ SMI(Stochastic Momentum Index,随机动量指数)
 ADX(Average Directional Index,平均趋向指标)
 MACD(Moving Average Convergence/Divergence, 指数平滑异同移动平均线)等。
 面对诸多指标，我们引入随机森林算法，用它来检测指标的重要程度，选择几个重要的指标，计算结果如下图：
-- ![](https://github.com/mingmingxi/423/edit/master/img/3.PNG)
+- ![](https://github.com/mingmingxi/423/blob/master/3.PNG)
 
 我们筛选出重要性大于5%的指标，用这些大于5%的指标的线性组合来表示股票最终的评价。
 
