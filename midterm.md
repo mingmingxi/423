@@ -45,6 +45,7 @@ DMwR、quantmod、xts、TTR、randomForest、e1071、kernlab、nnet
 
 导入股票数据之后，我们首先计算数据的T指标，并画出K线图和指标线图，如 Figure1 所示：
 - ![](https://github.com/mingmingxi/423/edit/master/img/2.PNG)
+
 K线图中柱条：表示当天的最高、最低价格；框：表示开盘价和收盘价，橙色：一天中呈下降趋势，绿色：一天中呈上升趋势。
 本实验中计算的是未来 10 天内的T值，如 Figure1中下方的图线所示
 根据未来 10 天内股价的变化来得到T值，在股价大跌时取得较大的负值，大涨时取得较大的正值。
